@@ -1,10 +1,17 @@
 import "./login.css"
-
+import {InputLogin} from './components/inputlogin/InputLogin'
+import { useState } from "react"
 export const Login = () =>{
+
+  const [email, setEmail] = useState("")
+  const [senha, setSenha] = useState("")
 
   return(
     <div>
-      <p>Logar</p>
+      <InputLogin onChange={e => setEmail(e)} label="Email" name="login" type="text" value={email}/>
+      {email}
+      <InputLogin onChange={e => setSenha(e)} label="Senha" name="senha" type="password" value={senha}/>
+      {senha}
     </div>
   )
 }
