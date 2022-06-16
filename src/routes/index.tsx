@@ -9,7 +9,6 @@ export const AppRoutes = () =>{
         <Route path="/home" element={<Home />}/>
         <Route path="/promocoes" element={<CreatePromotions />}/>
 
-
         <Route path="*" element={<Navigate to={"/home"}/>}/>
       </Routes>
     </BrowserRouter>

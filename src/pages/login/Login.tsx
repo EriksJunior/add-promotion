@@ -1,4 +1,5 @@
 import "./login.css"
+import {LayoutLogin} from '../../layout/login'
 import {InputLogin} from './components/inputlogin/InputLogin'
 import { useState } from "react"
 export const Login = () =>{
