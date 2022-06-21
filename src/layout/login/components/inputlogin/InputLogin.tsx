@@ -12,7 +12,7 @@ interface IInputLogin {
 
 export const InputLogin: React.FC<IInputLogin> = ({label, type, name, value, className, onChange}) => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col justify-center w-full">
       <div className=" w-full mb-2 flex justify-center">
         <div className="w-2/3 flex justify-start">
           <label className="text-slate-200 font-bold text-lg">{label}</label>
