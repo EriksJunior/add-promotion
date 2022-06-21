@@ -14,7 +14,7 @@ export const LoginLayout = () => {
 
   return (
     <div className="w-1/4 h-3/4 ">
-      <div className="teste">
+      <div className="triangle">
       </div>
       <CardLogin>
         <div className="w-full h-3/5 flex flex-col justify-center ">
