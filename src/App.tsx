@@ -1,6 +1,7 @@
-import {AppRoutes} from './routes'
-import './App.scss'
+import { AppRoutes } from './routes'
 
+import './App.scss'
+import 'react-toastify'
 function App() {
 
   return (

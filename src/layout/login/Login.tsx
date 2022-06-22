@@ -1,14 +1,15 @@
-import "./Login.scss"
+import React, { useState, useCallback } from "react"
+import { toast } from "react-toastify"
+
 import { InputLogin } from './components/inputlogin/InputLogin'
 import { LabelLogin } from "./components/labellogin/LabelLogin"
 import { CardLogin } from "./components/cardlogin/CardLogin"
 import { ButtonLogin } from "./components/button/ButtonLogin"
-import React, { useState, useCallback, useMemo } from "react"
 
 import ILogin from './interfaces/index'
+import ServiceLogin from './services/index'
 
-import ServiceLogin  from './services/index'
-
+import "./Login.scss"
 
 
 export const LoginLayout = () => {
@@ -22,13 +23,15 @@ export const LoginLayout = () => {
     setLogin({ ...login, [e.currentTarget.name]: e.currentTarget.value })
   }, [login])
 
-  const handleLogin = async ():Promise<void> => {
-    try {
-      const result = await ServiceLogin.save(login)
-      console.log(result)
-    } catch (error) {
-      console.log("Ocorreu um erro")
-    }
+  const handleLogin = async (): Promise<void> => {
+      toast.promise(
+        ServiceLogin.save(login),
+        {
+          pending: 'Verificando usuario 🚀',
+          success: 'Usuario logado 👍',
+          error: 'Ocorreu um erro ao logar 🤯'
+        }
+      )
   }
 
   return (
