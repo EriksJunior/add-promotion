@@ -3,7 +3,7 @@ interface ICardLogin {
   children: JSX.Element[] | JSX.Element,
 }
 
-import './CardLogin.css'
+import './CardLogin.scss'
 
 export const CardLogin: React.FC<ICardLogin> = ({ children }) => {
   return (

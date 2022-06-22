@@ -1,4 +1,4 @@
-import "./Login.css"
+import "./Login.scss"
 import { InputLogin } from './components/inputlogin/InputLogin'
 import { LabelLogin } from "./components/labellogin/LabelLogin"
 import { CardLogin } from "./components/cardlogin/CardLogin"
