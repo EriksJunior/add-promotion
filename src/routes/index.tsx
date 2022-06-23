@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import { CreatePromotions, Home, Login } from "../pages";
+import { CreatePromotions, Home, Login, CreateLogin } from "../pages";
 
 
 export const AppRoutes = () => {
@@ -7,6 +7,7 @@ export const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/cadastrarlogin" element={<CreateLogin />} />
         <Route path="/home" element={<Home />} />
         <Route path="/promocoes" element={<CreatePromotions />} />
 

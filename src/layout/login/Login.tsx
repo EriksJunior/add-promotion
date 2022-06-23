@@ -1,10 +1,11 @@
 import React, { useState, useCallback } from "react"
+import { Link } from "react-router-dom"
 import { toast } from "react-toastify"
 
-import { InputLogin } from './components/inputlogin/InputLogin'
-import { LabelLogin } from "./components/labellogin/LabelLogin"
-import { CardLogin } from "./components/cardlogin/CardLogin"
-import { ButtonLogin } from "./components/button/ButtonLogin"
+import { InputLogin } from './components/InputLogin/InputLogin'
+import { LabelLogin } from "./components/LabelLogin/LabelLogin"
+import { CardLogin } from "./components/CardLogin/CardLogin"
+import { ButtonLogin } from "./components/Button/ButtonLogin"
 
 import ILogin from './interfaces/index'
 import ServiceLogin from './services/index'
@@ -24,14 +25,14 @@ export const LoginLayout = () => {
   }, [login])
 
   const handleLogin = async (): Promise<void> => {
-      toast.promise(
-        ServiceLogin.save(login),
-        {
-          pending: 'Verificando usuario 🚀',
-          success: 'Usuario logado 👍',
-          error: 'Ocorreu um erro ao logar 🤯'
-        }
-      )
+    toast.promise(
+      ServiceLogin.save(login),
+      {
+        pending: 'Verificando usuario 🚀',
+        success: 'Usuario logado 👍',
+        error: 'Ocorreu um erro ao logar 🤯'
+      }
+    )
   }
 
   return (
@@ -40,7 +41,7 @@ export const LoginLayout = () => {
 
       </div>
       <CardLogin>
-        <div className="w-full h-3/5 flex flex-col justify-center ">
+        <div className="w-full h-3/5 flex flex-col mt-10 justify-center ">
           <LabelLogin text={"Login"}>
             <InputLogin className=" w-2/3 mb-5 h-10 rounded-lg outline-none text-center active:bg-cyan-800 focus:ring focus:ring-cyan-800" onChange={handleChange} name={"login"} type={"text"} />
           </LabelLogin>
@@ -49,8 +50,13 @@ export const LoginLayout = () => {
             <InputLogin className="w-2/3 h-10 rounded-lg outline-none text-center active:bg-cyan-800 focus:ring focus:ring-cyan-800" onChange={handleChange} name={"senha"} type={"password"} />
           </LabelLogin>
         </div>
-        <div className="w-1/4 b flex justify-center items-end">
-          <ButtonLogin className={"rounded-lg h-10 w-full font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
+        <div className="w-full h-1/5 flex justify-between flex-col">
+          <div>
+            <ButtonLogin className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
+          </div>
+          <div>
+            <Link className="text-white hover:text-cyan-900 delay-100 transition-colors" to={'/cadastrarlogin'}>Cadastre-se</Link>
+          </div>
         </div>
       </CardLogin>
     </div>
