@@ -1,4 +1,4 @@
-import {LoginLayout} from '../../layout/login/Login'
+import {LoginLayout} from '../../layout/Login/Login'
 
 export const Login = () =>{
 

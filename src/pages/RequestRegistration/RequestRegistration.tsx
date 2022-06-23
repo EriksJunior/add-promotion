@@ -1,4 +1,4 @@
-import { RequestRegistrationLayout } from "../../layout/request_registration/RequestRegistration"
+import { RequestRegistrationLayout } from "../../layout/RequestRegistration/RequestRegistration"
 
 export const CreateLogin = () =>{
 
