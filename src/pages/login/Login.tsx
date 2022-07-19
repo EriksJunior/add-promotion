@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {LoginLayout} from '../../layout/Login/Login'
 
 export const Login = () =>{

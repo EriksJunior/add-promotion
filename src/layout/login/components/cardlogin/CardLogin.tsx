@@ -1,3 +1,4 @@
+import React from 'react'
 
 interface ICardLogin {
   children: JSX.Element[] | JSX.Element,

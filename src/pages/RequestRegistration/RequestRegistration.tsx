@@ -1,3 +1,4 @@
+import React from 'react'
 import { RequestRegistrationLayout } from "../../layout/RequestRegistration/RequestRegistration"
 
 export const CreateLogin = () =>{
