@@ -1,12 +1,12 @@
 import React, { useState, useCallback } from "react"
+import { Link } from "react-router-dom"
 import { toast } from "react-toastify"
 
 import { InputLogin } from './components/InputLogin/InputLogin'
 import { LabelLogin } from "./components/LabelLogin/LabelLogin"
 import { CardLogin } from "./components/CardLogin/CardLogin"
 import { ButtonLogin } from "./components/Button/ButtonLogin"
-import { ButtonRegistration } from "../RequestRegistration/components/Button/ButtonRegistration"
-import { RequestRegistrationLayout } from "../RequestRegistration/RequestRegistration"
+
 
 import ILogin from './interfaces/index'
 import ServiceLogin from './services/index'
@@ -20,8 +20,6 @@ export const LoginLayout = () => {
     login: '',
     senha: ''
   } as ILogin)
-
-  const [showRegsitration, setShowRegsitration] = useState(false)
 
 
   const handleChange = useCallback((e: React.FormEvent<HTMLInputElement>) => {
@@ -39,20 +37,12 @@ export const LoginLayout = () => {
     )
   }
 
-  const handleRegistration = async (): Promise<void> => {
-    showRegsitration ? setShowRegsitration(false) : setShowRegsitration(true)
+  const handleRegistration = (): void => {
+    console.log('teste')
   }
 
   return (
     <div className="w-full h-full flex justify-center items-center absolute">
-
-      {showRegsitration ? (
-        <div className="containerRegistration absolute">
-          <RequestRegistrationLayout onClick={handleRegistration} />
-        </div>
-      ) : null}
-
-
       <div className="w-1/4 h-3/4">
         <div className="triangle">
 
@@ -72,7 +62,7 @@ export const LoginLayout = () => {
               <ButtonLogin className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
             </div>
             <div>
-              <ButtonRegistration className="text-white hover:text-cyan-900 delay-100 transition-colors" onClick={handleRegistration} textButton="Cadastre-se" />
+              <Link className="text-white hover:text-cyan-900 delay-100 transition-colors" to={'/cadastrarlogin'}>Cadastre-se</Link>
             </div>
           </div>
         </CardLogin>
