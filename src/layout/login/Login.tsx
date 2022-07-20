@@ -39,7 +39,7 @@ export const LoginLayout = () => {
     )
   }
 
-  const handleReistration = async (): Promise<void> => {
+  const handleRegistration = async (): Promise<void> => {
     showRegsitration ? setShowRegsitration(false) : setShowRegsitration(true)
   }
 
@@ -48,7 +48,7 @@ export const LoginLayout = () => {
 
       {showRegsitration ? (
         <div className="containerRegistration absolute">
-          <RequestRegistrationLayout onClick={handleReistration} />
+          <RequestRegistrationLayout onClick={handleRegistration} />
         </div>
       ) : null}
 
@@ -72,7 +72,7 @@ export const LoginLayout = () => {
               <ButtonLogin className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
             </div>
             <div>
-              <ButtonRegistration className="text-white hover:text-cyan-900 delay-100 transition-colors" onClick={handleReistration} textButton="Cadastre-se" />
+              <ButtonRegistration className="text-white hover:text-cyan-900 delay-100 transition-colors" onClick={handleRegistration} textButton="Cadastre-se" />
             </div>
           </div>
         </CardLogin>
