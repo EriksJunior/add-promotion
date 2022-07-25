@@ -4,6 +4,7 @@ import { Card } from '../../shared/components/Card/Card'
 import { Input } from '../../shared/components/Input/Input'
 import { Row } from '../../shared/components/Row/Row'
 import { Column } from '../../shared/components/Col/Col'
+import { ContentLabel } from '../../shared/components/Label/ContentLabel'
 
 import './RequestRegistration.scss'
 
@@ -11,19 +12,50 @@ export const RequestRegistrationLayout: React.FC = () => {
   return (
     <Card className={'w-2/4 h-auto rounded-2xl p-3 generalContainer bg-cyan-600 shadow-lg shadow-cyan-500/50'}>
       <Row>
-        <Input className='companyName' placeholder='nomeEmpresa' size={'40%'} type='text' />
-        <Input className='address' placeholder='endereço' size={'40%'} type='text' />
-        <Input className='district' placeholder='bairro' size={'25%'} type='text' />
-        <Input className='number' placeholder='numero' size={'25%'} type='text' />
-        <Input className='city' placeholder='cidade' size={'25%'} type='text' />
-        <Input className='cep' placeholder='cep' size={'25%'} type='text' />
-        <Input className='telephone' placeholder='telefone' size={'25%'} type='text' />
+        <ContentLabel textLabel={'Empresa'}>
+          <Input className='companyName' size={'93%'} type='text' />
+        </ContentLabel>
 
-       
-        <Input className='cpfCnpj' placeholder='cpfCnpj' size={'25%'} type='text' />
-        <Input className='email' placeholder='email' size={'25%'} type='text' />
-        <Input className='password' placeholder='senha' size={'25%'} type='text' />
-        <Input className='secret' placeholder='secredo' size={'25%'} type='text' />
+        <ContentLabel textLabel={'Endereço'}>
+          <Input className='address'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Bairro'}>
+          <Input className='district'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Nº'}>
+          <Input className='number'  size={'20%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Cidade'}>
+          <Input className='city' size={'40%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Cep'}>
+          <Input className='cep'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Telefone'}>
+          <Input className='telephone'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'cpfCnpj'}>
+          <Input className='cpfCnpj'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Email'}>
+          <Input className='email'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Senha'}>
+          <Input className='password'  size={'93%'} type='text' />
+        </ContentLabel>
+
+        <ContentLabel textLabel={'Segredo'}>
+          <Input className='secret'  size={'93%'} type='text' />
+        </ContentLabel>
+
       </Row>
     </Card>
   )
