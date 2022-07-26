@@ -4,7 +4,7 @@ interface IButtonLogin{
   textButton: string;
   className?: string;
   
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const ButtonLogin: React.FC<IButtonLogin> = ({textButton, onClick, className}) =>{
