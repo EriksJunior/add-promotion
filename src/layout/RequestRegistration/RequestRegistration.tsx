@@ -13,47 +13,47 @@ export const RequestRegistrationLayout: React.FC = () => {
     <Card className={'w-2/4 h-auto rounded-2xl p-3 generalContainer bg-cyan-600 shadow-lg shadow-cyan-500/50'}>
       <Row>
         <ContentLabel textLabel={'Empresa'}>
-          <Input className='companyName' size={'93%'} type='text' />
+          <Input className='inputRegistration companyName' size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Endereço'}>
-          <Input className='address'  size={'93%'} type='text' />
+          <Input className='inputRegistration address'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Bairro'}>
-          <Input className='district'  size={'93%'} type='text' />
+          <Input className='inputRegistration district'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Nº'}>
-          <Input className='number'  size={'20%'} type='text' />
+          <Input className='inputRegistration number'  size={'20%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Cidade'}>
-          <Input className='city' size={'40%'} type='text' />
+          <Input className='inputRegistration city' size={'40%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Cep'}>
-          <Input className='cep'  size={'93%'} type='text' />
+          <Input className='inputRegistration cep'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Telefone'}>
-          <Input className='telephone'  size={'93%'} type='text' />
+          <Input className='inputRegistration telephone'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'cpfCnpj'}>
-          <Input className='cpfCnpj'  size={'93%'} type='text' />
+          <Input className='inputRegistration cpfCnpj'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Email'}>
-          <Input className='email'  size={'93%'} type='text' />
+          <Input className='inputRegistration email'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Senha'}>
-          <Input className='password'  size={'93%'} type='text' />
+          <Input className='inputRegistration password'  size={'93%'} type='text' />
         </ContentLabel>
 
         <ContentLabel textLabel={'Segredo'}>
-          <Input className='secret'  size={'93%'} type='text' />
+          <Input className='inputRegistration secret'  size={'93%'} type='text' />
         </ContentLabel>
 
       </Row>
