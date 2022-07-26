@@ -58,7 +58,7 @@ export const LoginLayout = () => {
               <Button className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
             </div>
             <div>
-              <Link className="text-white hover:text-cyan-900 delay-100 transition-colors" to={'/cadastrarlogin'}>Cadastre-se</Link>
+              <Link className="text-white hover:text-cyan-900 delay-100 transition-colors" to={'/criarcadastro'}>Cadastre-se</Link>
             </div>
           </div>
         </CardLogin>

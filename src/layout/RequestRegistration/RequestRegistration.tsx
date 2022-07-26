@@ -36,7 +36,7 @@ export const RequestRegistrationLayout: React.FC = () => {
   }
 
   return (
-    <Card className={'w-2/4 h-auto rounded-2xl p-3 generalContainer bg-cyan-900 shadow-md shadow-cyan-500/50'}>
+    <Card className={'w-2/4 h-auto rounded-2xl p-3 generalContainer bg-cyan-900 shadow-md shadow-black'}>
       <Row>
         <Input hidden={true}/>
 
