@@ -5,7 +5,7 @@ import { toast } from "react-toastify"
 import { InputLogin } from './components/InputLogin/InputLogin'
 import { LabelLogin } from "./components/LabelLogin/LabelLogin"
 import { CardLogin } from "./components/CardLogin/CardLogin"
-import { ButtonLogin } from "./components/Button/ButtonLogin"
+import { ButtonLogin } from "../../shared/components/Button/ButtonLogin"
 
 
 import ILogin from './interfaces/index'

@@ -56,6 +56,7 @@ export const RequestRegistrationLayout: React.FC = () => {
           <Input className='inputRegistration secret'  size={'93%'} type='text' />
         </ContentLabel>
 
+
       </Row>
     </Card>
   )

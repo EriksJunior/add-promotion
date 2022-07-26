@@ -8,7 +8,7 @@ interface IRow{
 
 export const Row: React.FC<IRow> = ({children}) =>{
   return(
-    <div className='generalContainerRow w-full flex flex-wrap justify-center'>
+    <div className='generalContainerRow w-full flex flex-wrap'>
       {children}
     </div>
   )

@@ -7,7 +7,7 @@ interface ILabel {
 }
 export const ContentLabel: React.FC<ILabel> = ({ children, textLabel }) => {
   return (
-    <div className=" w-2/4 flex flex-col flex-wrap">
+    <div className=" w-2/4 flex flex-col flex-wrap justify-start">
       <div className="labelFloat" style={{ display: 'flex', justifyContent: 'start',  width:'93%', fontSize: '13px' }}>
         <label>{textLabel}</label>
       </div>
