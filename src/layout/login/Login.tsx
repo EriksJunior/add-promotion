@@ -5,7 +5,7 @@ import { toast } from "react-toastify"
 import { InputLogin } from './components/InputLogin/InputLogin'
 import { LabelLogin } from "./components/LabelLogin/LabelLogin"
 import { CardLogin } from "./components/CardLogin/CardLogin"
-import { ButtonLogin } from "../../shared/components/Button/ButtonLogin"
+import { Button } from "../../shared/components/Button/Button"
 
 
 import ILogin from './interfaces/index'
@@ -59,7 +59,7 @@ export const LoginLayout = () => {
           </div>
           <div className="w-full h-1/5 flex justify-between flex-col">
             <div>
-              <ButtonLogin className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
+              <Button className={"w-1/4 rounded-lg h-10 font-bold bg-cyan-900 text-white"} onClick={handleLogin} textButton="Login" />
             </div>
             <div>
               <Link className="text-white hover:text-cyan-900 delay-100 transition-colors" to={'/cadastrarlogin'}>Cadastre-se</Link>

@@ -1,13 +1,14 @@
 import React from 'react'
+import './Button.scss'
 
-interface IButtonLogin{
+interface IButton{
   textButton: string;
   className?: string;
   
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
-export const ButtonLogin: React.FC<IButtonLogin> = ({textButton, onClick, className}) =>{
+export const Button: React.FC<IButton> = ({textButton, onClick, className}) =>{
   return(
       <button className={className} onClick={onClick}>{textButton}</button>
   )
