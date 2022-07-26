@@ -37,10 +37,6 @@ export const LoginLayout = () => {
     )
   }
 
-  const handleRegistration = (): void => {
-    console.log('teste')
-  }
-
   return (
     <div className="w-full h-full flex justify-center items-center absolute">
       <div className="w-1/4 h-3/4">
